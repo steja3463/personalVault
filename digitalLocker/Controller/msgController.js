@@ -1,3 +1,4 @@
+//msgController.js
 const Msg = require('../models/Msg');
 const User = require('../models/User'); 
 
