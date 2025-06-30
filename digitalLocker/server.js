@@ -1,4 +1,3 @@
-//server.js
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -13,7 +12,6 @@ mongoose.connect(process.env.MONGO_URI)
     .catch((err) => console.log(err))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 app.use('/api/auth', auth);
 app.use('/api/secret', secret);
 app.listen(PORT, () => console.log('Server connected at PORT 8000'));
